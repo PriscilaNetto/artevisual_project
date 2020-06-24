@@ -2,22 +2,25 @@
 <html lang="pt-br">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arte Visual</title>
+
     <link rel="stylesheet" href="css/style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&=Jost&familydisplay=swap"
       rel="stylesheet"
     />
     <script
       src="https://kit.fontawesome.com/c230386450.js"
       crossorigin="anonymous"
+      src="scripts.js"
     ></script>
   </head>
   <body>
     <header>
       <nav class="menu">
         <div class="logo"></div>
-        <ul>
+        <ul class="container">
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#equipamentos">Equipamentos</a></li>
           <li><a href="./eventoonline.html">Evento Online</a></li>
@@ -26,7 +29,17 @@
       </nav>
 
       <!-- colocar o vídeo de abertura-->
-      <div class="abertura"></div>
+
+      <video
+        class="container"
+        controls="controls"
+        autoplay
+        preload="auto"
+        loop="loop"
+      >
+        <source src="./img/Meu Filme.mp4" type="video/mp4" />
+        Video not supported
+      </video>
     </header>
     <section class="sobre container" id="sobre">
       <h2>Sobre</h2>
