@@ -12,107 +12,193 @@
     />
     <script
       src="https://kit.fontawesome.com/c230386450.js"
+      ;
       crossorigin="anonymous"
+      ;
       src="scripts.js"
+      ;
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      ;
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      ;
+      crossorigin="anonymous"
+      ;
     ></script>
   </head>
   <body>
-    <!-- menu com logo e listas-->
-    <header>
+    <header class="contem cabecalho">
+      <!-- <nav class="menu"> -->
+      <a href="./index.html">
+        <h1 class="logo"></h1>
+      </a>
+      <i class="btn-menu fas fa-bars fa-lg"></i>
+      <!-- menu com logo e listas-->
       <nav class="menu">
-        <div class="logo"></div>
-          <ul>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="./eventoonline.html">Evento Online</a></li>
-            <li><a href="#contato">Contato</a></li>
-          </ul>
-        </div>
+        <a class="btn-close"><i class="fa fa-times"></i></a>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="./eventoonline.html"> Evento Online</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
       </nav>
+
       <!-- video no header-->
+      <!--header
       <video autoplay muted loop>
         <source src="./img/Meu Filme.mp4" type="video/mp4" />
         Video not supported
-      </video>
+      </video>-->
     </header>
+
     <!-- conteúdo sobre-->
     <section class="sobre container" id="sobre">
       <h2>Sobre</h2>
-        <p>A Arte Visual está há mais de 4 anos no mercado de eventos.</p>
-        <p>Estamos localizados em São Paulo, na cidade onde acontece os maiores eventos do país.</p>
-        <p>
-        Nós atuamos com tecnologia audiovisual de vídeo projeção, gerenciamento de conteúdos de vídeo e power point, painel de led,
-        vídeo mapping, sonorização em eventos online, corporativos,
-        esportivos, sociais, shows, teatro, feira de exposição.</p>
-        <p>
+      <p>A Arte Visual está há mais de 4 anos no mercado de eventos.</p>
+      <p>
+        Estamos localizados em São Paulo, na cidade onde acontece os maiores
+        eventos do país.
+      </p>
+      <p>
+        Nós atuamos com tecnologia audiovisual de vídeo projeção, gerenciamento
+        de conteúdos de vídeo e power point, painel de led, vídeo mapping,
+        sonorização em eventos online, corporativos, esportivos, sociais, shows,
+        teatro, feira de exposição.
+      </p>
+      <p>
         Nosso objetivo é entregar excelentes resultados superando as
-        expectativas de nossos clientes.</p>
-        <p>Essa é a nossa <strong>arte.</strong>
-        </p>
+        expectativas de nossos clientes.
+      </p>
+      <p>Essa é a nossa <strong>arte.</strong></p>
     </section>
-      <!-- Termina o campo sobre-->
+    <!-- Termina o campo sobre-->
 
-  
-    <section class="marcas container"id="marcas">
-      <h2>Trabalhamos com as seguintes marcas</h2>
-        <div class="grid">
+    <section class="marcas container" id="marcas">
+      <h2>Trabalhamos com as seguintes marcas:</h2>
+      <div class="grid">
         <figure>
-        <img class="img-marcas" src="../artevisual_project/img/logoBarco.png" alt="Barco-logo">
+          <img
+            class="img-marcas"
+            src="../artevisual_project/img/Analway.png"
+            alt="logo Analog Way"
+          />
         </figure>
         <figure>
-          <img class="img-marcas" src="../artevisual_project/img/apple.jpg" alt="Apple-logo">
+          <img
+            class="img-marcas"
+            src="../artevisual_project/img/Sony.png"
+            alt="Sony-logo"
+          />
         </figure>
-        <figure>
-          <img class="img-marcas" src="../artevisual_project/img/Analway.png" alt="logo Analog Way"> 
-        </figure>
-        <figure>
-          <img class="img-marcas" src="../artevisual_project/img/Sony.png" alt="Sony-logo">
-        </figure>
-    
-        <figure>
-          <img class="img-marcas" src="../artevisual_project/img/Gefen-Toolbox-Logo-1.png" alt="Gefen-logo">
-        </figure>
-        <figure>
-          <img class="img-marcas" src="../artevisual_project/img/dell-logo.png" alt="dell-logo"> 
-        </figure>
-        <figure>
-          <img class="img-marcas" src="../artevisual_project/img/kramer-electronics-vector-logo.png" alt="Kramer-logo">
-        </figure>
-        <figure>
-          <img class="img-marcas" src="../artevisual_project/img/Avell_1x1.png" alt="Avell-logo">
-        </figure>
-        <figure>
-          <img class="img-marcas" src="../artevisual_project/img/nvidia-logo-1-2.png" alt="Nvidia-logo">
-        </figure>
-        <figure>
-          <img class="img-marcas" src="../artevisual_project/img/panasonic.png" alt="Panasonic-logo">
-        </figure>
-        <figure>
-          <img class="img-marcas" src="../artevisual_project/img/resolume1-e8c5a339002ab7b4a015684042804194-480-0.jpg" alt="Resolume-logo">
-        </figure>
-        <figure>
-          <img class="img-marcas" src="../artevisual_project/img/Microsoft-Logo.png" alt="logo Microsoft">
-      </figure>
 
+        <figure>
+          <img
+            class="img-marcas"
+            src="../artevisual_project/img/logoBarco.png"
+            alt="Barco-logo"
+          />
+        </figure>
+
+        <figure>
+          <img
+            class="img-marcas"
+            src="../artevisual_project/img/Gefen-Toolbox-Logo-1.png"
+            alt="Gefen-logo"
+          />
+        </figure>
+
+        <figure>
+          <img
+            class="img-marcas"
+            src="../artevisual_project/img/apple.jpg"
+            alt="Apple-logo"
+          />
+        </figure>
+        <figure>
+          <img
+            class="img-marcas"
+            src="../artevisual_project/img/dell-logo.png"
+            alt="dell-logo"
+          />
+        </figure>
+        <figure>
+          <img
+            class="img-marcas"
+            src="../artevisual_project/img/kramer-electronics-vector-logo.png"
+            alt="Kramer-logo"
+          />
+        </figure>
+        <figure>
+          <img
+            class="img-marcas"
+            src="../artevisual_project/img/Avell_1x1.png"
+            alt="Avell-logo"
+          />
+        </figure>
+        <figure>
+          <img
+            class="img-marcas"
+            src="../artevisual_project/img/nvidia-logo-1-2.png"
+            alt="Nvidia-logo"
+          />
+        </figure>
+        <figure>
+          <img
+            class="img-marcas"
+            src="../artevisual_project/img/panasonic.png"
+            alt="Panasonic-logo"
+          />
+        </figure>
+        <figure>
+          <img
+            class="img-marcas"
+            src="../artevisual_project/img/resolume1-e8c5a339002ab7b4a015684042804194-480-0.jpg"
+            alt="Resolume-logo"
+          />
+        </figure>
+        <figure>
+          <img
+            class="img-marcas"
+            src="../artevisual_project/img/Microsoft-Logo.png"
+            alt="logo Microsoft"
+          />
+        </figure>
       </div>
     </section>
 
-<section>
-  <h3>Parceiros</h3>
-
-</section>
-    
-      <!--
-    <div class="social-icons">
-      <a href="#" target="blank" class="btn-instagram"
-        ><i class="fab fa-instagram fa-lg"></i
-      ></a>
-      <a
-        href="https://br.linkedin.com/company/arte-visual-pro?trk=public_profile_topcard_current_company"
-        target="blank"
-        class="btn-linkedin"
-        ><i class="fab fa-linkedin fa-lg"></i
-      ></a>
-      <a href="#" class="btn-whatsapp"><i class="fab fa-whatsapp fa-lg"></i></a>
-    </div>-->
+    <footer class="contem rodape bg-gradiente">
+      <div class="social-icons">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#" target="blank" class="btn-instagram"
+          ><i class="fab fa-instagram fa-lg"></i
+        ></a>
+        <a
+          href="https://br.linkedin.com/company/arte-visual-pro?trk=public_profile_topcard_current_company"
+          target="blank"
+          class="btn-linkedin"
+          ><i class="fab fa-linkedin fa-lg"></i
+        ></a>
+        <!-- 
+        <a href="#" class="btn-whatsapp"
+          ><i class="fab fa-whatsapp fa-lg"></i
+        ></a>-->
+      </div>
+      <p class="copyright">
+        Todos os direitos reservados &copy; 2020 - Desenvolvido por Priscila
+        Netto
+      </p>
+    </footer>
+    <!-- Jquery-->
+    <script>
+      $(document).ready(function () {
+        $(".btn-menu").click(function () {
+          $(".menu").show();
+        });
+        $(".btn-close").click(function () {
+          $(".menu").hide();
+        });
+      });
+    </script>
   </body>
 </html>
