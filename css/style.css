@@ -55,7 +55,7 @@ header {
 */
 
 .menu {
-  display: block;
+  display: none;
   width: 100%;
   position: fixed;
   background-color: rgba(10, 10, 10, 0.9);
@@ -230,7 +230,7 @@ video {
 
   .flex-video {
     margin: 0 10px;
-    padding: 185px 10px 30px;
+    padding: 160px 10px 30px;
   }
 
   .sobre {
