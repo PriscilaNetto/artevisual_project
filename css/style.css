@@ -10,13 +10,6 @@ body {
   background-color: black;
 }
 
-.contem {
-  width: 100%;
-  float: left;
-  padding: 3% 4%;
-  text-align: center;
-}
-
 .bg-gradiente {
   background: linear-gradient(to right, #e47c27, #ff3a08);
 }
@@ -24,6 +17,7 @@ body {
 .cabecalho {
   padding: 1% 4%;
   background-color: whitesmoke;
+  border-bottom: 2px solid #da6709;
 }
 
 .logo {
@@ -100,12 +94,13 @@ header {
 a {
   text-decoration: none;
 }
+
 video {
   position: relative;
   display: block;
   left: 0;
   width: 100%;
-  opacity: 0.4;
+  opacity: 0.7;
 }
 
 /*
@@ -138,7 +133,6 @@ video {
 
 .sobre {
   padding-left: 7em;
-  min-height: 100vh;
   background-image: url(../img/IMG_67812.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -211,7 +205,18 @@ video {
 
 @media (min-width: 360px) {
   body {
-    font-size: 14px;
+    font-size: 16px;
+  }
+
+  .container {
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    text-align: center;
+  }
+  .logo {
+    width: 150px;
+    background: url(../img/logoArtetransp.png) center center/140px no-repeat;
   }
 
   .btn-menu {
@@ -219,13 +224,21 @@ video {
     height: 35px;
     margin-top: 20px;
   }
-  .logo {
-    width: 150px;
-    background: url(../img/logoArtetransp.png) center center/140px no-repeat;
+
+  .btn-close {
+    margin: 2% 10% 0 0;
+  }
+
+  .flex-video {
+    margin: 0 20px 60px;
+  }
+  video {
+    top: 10px;
   }
 
   .sobre {
-    padding: 3em 2em;
+    background-position: 70%;
+    padding: 18em 2em;
   }
 
   .sobre h2 {
@@ -236,7 +249,6 @@ video {
     margin-bottom: 2em;
     text-indent: 0.5em;
     line-height: 35px;
-    font-size: 16px;
   }
 
   .marcas h2 {

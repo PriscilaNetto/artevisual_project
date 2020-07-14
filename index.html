@@ -28,7 +28,7 @@
     ></script>
   </head>
   <body>
-    <header class="contem cabecalho">
+    <header class="container cabecalho">
       <!-- <nav class="menu"> do modelo anterior -->
       <a href="./index.html">
         <h1 class="logo"></h1>
@@ -44,10 +44,12 @@
         </ul>
       </nav>
     </header>
-    <video autoplay muted loop>
-      <source src="./img/MeuFilme.mp4" type="video/mp4" />
-      Video not supported
-    </video>
+    <div class="flex-video">
+      <video autoplay muted loop>
+        <source src="./img/MeuFilme.mp4" type="video/mp4" />
+        Video not supported
+      </video>
+    </div>
 
     <!-- conteúdo sobre-->
     <section class="sobre container" id="sobre">
@@ -71,7 +73,7 @@
     </section>
     <!-- Termina o campo sobre-->
 
-    <section class="marcas container" id="marcas">
+    <section class="marcas" id="marcas">
       <h2>Trabalhamos com as seguintes marcas:</h2>
       <div class="grid">
         <figure>
@@ -167,7 +169,7 @@
       </div>
     </section>
 
-    <footer class="contem rodape bg-gradiente">
+    <footer class="container rodape bg-gradiente">
       <div class="social-icons">
         <a href="#"><i class="fa fa-facebook"></i></a>
         <a href="#" target="blank" class="btn-instagram"
