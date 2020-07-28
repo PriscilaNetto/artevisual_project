@@ -12,41 +12,6 @@
   background: url(../img/frederic-koberl-2836IR07ocg-unsplash.jpg) no-repeat;
 }
 */
-/* Animacao digitando*/
-/*
-.line {
-  border-right: 10px solid rgba(255, 255, 255, 0.75);
-  color: rgba(255, 255, 255, 0.75);
-  font-family: "Jost", monospace;
-  font-size: 20px;
-  margin: 0 auto;
-  text-align: center;
-  white-space: nowrap; /*não quebre a linha*/
-/*overflow: hidden; 
-}*/
-/*
-.typing-animation {
-  animation: blinkCursor 500ms steps(30) infinite normal,
-    typing 7s steps(50) 1s normal both;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 50em;
-  }
-}
-
-@keyframes blinkCursor {
-  from {
-    border-right-color: rgba(255, 255, 255, 0.75);
-  }
-  to {
-    border-right-color: transparent;
-  }
-}*/
 
 /*container*/
 
@@ -63,14 +28,8 @@
   color: whitesmoke;
 }
 
-.btn-menu {
-  width: 45px;
-  height: 50px;
-  margin-top: 25px;
-  float: right;
-  text-align: center;
+p {
   color: #ffffff;
-  cursor: pointer;
 }
 
 /*servicos*/
@@ -120,33 +79,26 @@ header {
   background-repeat: no-repeat;
   background-size: cover;*/
 
+/* Desktop*/
+
 .infra h2 {
-  color: #ffffff;
+  padding-top: 30px;
+  font-family: "Jost", sans-serif;
+  color: whitesmoke;
+  margin-bottom: 1.5em;
+  font-size: 2em;
+  text-align: left;
   border-bottom: 2px solid #e47c27;
 }
 
-li {
-  color: blanchedalmond;
+img {
+  width: auto;
+  height: 450px;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
-/*rodapé*/
-.rodape {
-  background: linear-gradient(to right, #e47c27, #ff3a08);
-}
-
-.social-icons a {
-  font-size: 1.5em;
-  color: rgba(255, 255, 255, 0.7);
-  margin-right: 3%;
-}
-
-.social-icons a:last-child {
-  margin-right: 0;
-}
-.social-icons a:hover {
-  color: rgb(255, 255, 255);
-}
-.copyright {
-  margin-top: 2%;
-  color: rgba(255, 255, 255, 0.7);
+.equipamentos p {
+  font-size: 15px;
 }
