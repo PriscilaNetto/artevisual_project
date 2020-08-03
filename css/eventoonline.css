@@ -3,33 +3,46 @@
   padding: 0;
   box-sizing: border-box;
 }
-/*
+
 .banner {
   width: 100%;
   float: left;
   text-align: center;
   padding: 3% 4%;
-  background: url(../img/frederic-koberl-2836IR07ocg-unsplash.jpg) no-repeat;
-}
-*/
-
-/*container*/
-
-.title {
-  width: 100%;
-}
-.title h2 {
-  font-size: 2.5em;
-  color: whitesmoke;
-  font-weight: 700;
-}
-.title h3 {
-  font-size: 1.5em;
-  color: whitesmoke;
 }
 
-p {
-  color: #ffffff;
+.line {
+  border-right: 10px solid rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Jost", monospace;
+  font-size: 12px;
+  margin: 0 auto;
+  text-align: left;
+  white-space: nowrap; /*não quebre a linha*/
+  overflow: hidden;
+}
+
+.typing-animation {
+  animation: blinkCursor 500ms steps(30) infinite normal,
+    typing 7s steps(50) 1s normal both;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 40em;
+  }
+}
+
+@keyframes blinkCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
 
 /*servicos*/
@@ -39,28 +52,17 @@ p {
   float: left;
   padding: 3% 4%;
 }
-
-.servico {
+.descricao {
   width: 100%;
   background-color: #ffffff;
   text-align: left;
-  border-radius: 7%;
   margin-bottom: 3%;
 }
 
-.servico img {
-  border-radius: 7px 7px 0 0;
-}
-
 .inner {
-  padding: 7%;
+  padding: 4%;
 }
-.inner a {
-  font-size: 1.5em;
-  color: #130400;
-  font-weight: 700;
-}
-.inner h4 {
+.inner h1 {
   font-size: 1.2em;
   color: #130400;
   margin-top: 2%;
@@ -70,25 +72,51 @@ p {
   color: #130400;
   line-height: 1.5em;
 }
+
 /*
-header {
-  min-height: 100vh;
-  
-  background-image: url(../img/markus-spiske-UCbMZ0S-w28-unsplash.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;*/
 
 /* Desktop*/
+/* 
+@media (min-width: 1200px) {
+  line {
+    border-right: 5px solid rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.75);
+    font-family: "Jost", monospace;
+    font-size: 25px;
+    margin: 0 auto;
+    text-align: center;
+    white-space: nowrap; /*não quebre a linha*/
+/* overflow: hidden;
+  }
 
-.infra h2 {
-  padding-top: 30px;
-  font-family: "Jost", sans-serif;
-  color: whitesmoke;
-  margin-bottom: 1.5em;
-  font-size: 2em;
-  text-align: left;
-  border-bottom: 2px solid #e47c27;
+  .typing-animation {
+    animation: blinkCursor 500ms steps(10) infinite normal,
+      typing 5s steps(30) 1s normal both;
+  }
+
+  .servico h1 {
+    padding-top: 20px;
+    font-family: "Jost", sans-serif;
+    color: #0e0d0d;
+    margin-bottom: 0.5em;
+    font-size: 2em;
+    border-bottom: 2px solid #e47c27;
+  }
+  .infraimagem {
+    width: auto;
+    height: 470px;
+    float: left;
+    margin-right: 75px;
+    margin-bottom: 30px;
+  }
+
+  .inner {
+    padding: 70px;
+  }
+
+  .servico li {
+    line-height: 1.5em;
+  }
 }
 
 img {
@@ -99,6 +127,10 @@ img {
   margin-bottom: 30px;
 }
 
+.inner .infraestrutura {
+  padding: 1%;
+}
+
 .equipamentos p {
   font-size: 15px;
-}
+} */
