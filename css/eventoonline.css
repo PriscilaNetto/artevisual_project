@@ -8,15 +8,16 @@
   width: 100%;
   float: left;
   text-align: center;
-  padding: 3% 4%;
+  padding: 5% 4%;
+  background-color: #e47c27;
 }
 
 .line {
   border-right: 10px solid rgba(255, 255, 255, 0.75);
   color: rgba(255, 255, 255, 0.75);
   font-family: "Jost", monospace;
-  font-size: 12px;
-  margin: 0 auto;
+  font-size: 15px;
+  margin: 20px auto;
   text-align: left;
   white-space: nowrap; /*não quebre a linha*/
   overflow: hidden;
@@ -50,87 +51,113 @@
 .servicos {
   width: 100%;
   float: left;
-  padding: 3% 4%;
+  padding: 8% 4%;
 }
 .descricao {
   width: 100%;
-  background-color: #ffffff;
+  background-color: #e47c27;
   text-align: left;
   margin-bottom: 3%;
+  border-radius: 7px 7px 0 0;
+  /* border: solid 2px #da6709; */
+}
+
+.descricao img {
+  border-radius: 7px 7px 0 0;
+  border: solid 3px #ffffff;
+  width: 100%;
 }
 
 .inner {
-  padding: 4%;
+  padding: 6%;
 }
-.inner h1 {
+
+.inner h2 {
   font-size: 1.2em;
-  color: #130400;
+  color: #0e0d0d;
   margin-top: 2%;
 }
 .inner p {
-  margin-top: 6%;
-  color: #130400;
+  margin-top: 5%;
+  color: #0e0d0d;
   line-height: 1.5em;
 }
 
-/*
+/*tablets*/
 
-/* Desktop*/
-/* 
-@media (min-width: 1200px) {
-  line {
-    border-right: 5px solid rgba(255, 255, 255, 0.75);
+@media (min-width: 768px) {
+  .banner {
+    text-align: left;
+    padding: 3% 4%;
+    background-color: #e47c27;
+  }
+
+  .line {
+    border-right: 10px solid rgba(255, 255, 255, 0.75);
     color: rgba(255, 255, 255, 0.75);
     font-family: "Jost", monospace;
-    font-size: 25px;
-    margin: 0 auto;
-    text-align: center;
+    font-size: 22px;
+    margin: 20px 0px 15px 0px;
+    text-align: left;
     white-space: nowrap; /*não quebre a linha*/
-/* overflow: hidden;
+    overflow: hidden;
   }
 
   .typing-animation {
-    animation: blinkCursor 500ms steps(10) infinite normal,
-      typing 5s steps(30) 1s normal both;
+    animation: blinkCursor 500ms steps(30) infinite normal,
+      typing 7s steps(50) 1s normal both;
   }
 
-  .servico h1 {
-    padding-top: 20px;
-    font-family: "Jost", sans-serif;
-    color: #0e0d0d;
-    margin-bottom: 0.5em;
-    font-size: 2em;
-    border-bottom: 2px solid #e47c27;
-  }
-  .infraimagem {
-    width: auto;
-    height: 470px;
+  .descricao {
+    width: 49%;
     float: left;
-    margin-right: 75px;
-    margin-bottom: 30px;
+    margin-right: 2%;
   }
 
-  .inner {
-    padding: 70px;
+  .descricao:nth-child(2) {
+    margin-right: 0;
   }
-
-  .servico li {
-    line-height: 1.5em;
+  .descricao li {
+    margin-bottom: 3px;
   }
 }
 
-img {
-  width: auto;
-  height: 450px;
-  float: left;
-  margin-right: 30px;
-  margin-bottom: 30px;
+/*tablets e desktops*/
+@media (min-width: 960px) {
+  .descricao {
+    width: 48%;
+  }
+
+  .descricao:nth-child(2) {
+    margin-right: 2%;
+  }
+
+  /* .descricao:nth-child(3) {
+    margin-right: 0;
+  } */
 }
 
-.inner .infraestrutura {
-  padding: 1%;
-}
+/* Desktop*/
 
-.equipamentos p {
-  font-size: 15px;
-} */
+@media (min-width: 1200px) {
+  .menu li a {
+    color: #ffffff;
+    font-size: 1em;
+    padding: 35px;
+    margin: 30px;
+  }
+
+  .servicos {
+    width: 100%;
+    float: left;
+    padding: 6% 2%;
+  }
+
+  .inner h2 {
+    font-size: 2em;
+  }
+  .descricao li,
+  .inner p {
+    font-size: 1.5em;
+  }
+}
