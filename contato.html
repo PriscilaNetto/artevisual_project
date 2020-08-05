@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arte Visual</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/eventoonline.css" /> -->
+    <link rel="stylesheet" href="contato.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&=Jost&familydisplay=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/c230386450.js"
+      ;
+      crossorigin="anonymous"
+      ;
+      src="scripts.js"
+      ;
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      ;
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      ;
+      crossorigin="anonymous"
+      ;
+    ></script>
+  </head>
+
+  <body>
+    <header class="container cabecalho">
+      <a href="./index.html">
+        <h1 class="logo"></h1>
+      </a>
+      <a class="btn-menu"><i class="fas fa-bars fa-lg"></i></a>
+      <nav class="menu">
+        <a class="btn-close"><i class="fa fa-times"></i></a>
+        <ul>
+          <li><a href="./index.html">Página Inicial</a></li>
+          <li><a href="./eventoonline.html">Evento Online</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="contato">
+      <h3>Faça seu orçamento</h3>
+      <p>
+        Faça um orçamento sem compromisso, será um prazer te atender!
+      </p>
+      <form>
+        <input type="text" placeholder="Empresa" />
+        <input type="text" placeholder="Nome  *" required />
+        <br />
+        <input type="email" placeholder="Email *" required />
+        <input type="number" placeholder="Telefone" />
+
+        <br />
+        <div>
+          <div>
+            <label for="comment">Assunto</label>
+          </div>
+          <textarea
+            id="comment"
+            name="comment"
+            placeholder="Deixe mais detalhes sobre o seu evento..."
+            rows="10"
+            cols="50"
+          ></textarea>
+        </div>
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+    <div>
+      <p>Whatsapp</p>
+      <a href="#" class="btn-whatsapp"><i class="fab fa-whatsapp fa-lg"></i></a>
+    </div>
+    <footer class="container rodape bg-gradiente">
+      <div class="social-icons">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#" target="blank" class="btn-instagram"
+          ><i class="fab fa-instagram fa-lg"></i
+        ></a>
+        <a
+          href="https://br.linkedin.com/company/arte-visual-pro?trk=public_profile_topcard_current_company"
+          target="blank"
+          class="btn-linkedin"
+          ><i class="fab fa-linkedin fa-lg"></i
+        ></a>
+      </div>
+      <p class="copyright">
+        Todos os direitos reservados &copy; 2020 | Desenvolvido por Priscila
+        Netto
+      </p>
+    </footer>
+    <!-- Jquery-->
+    <script>
+      $(document).ready(function () {
+        $(".btn-menu").click(function () {
+          $(".menu").show();
+        });
+        $(".btn-close").click(function () {
+          $(".menu").hide();
+        });
+      });
+    </script>
+  </body>
+</html>
