@@ -6,8 +6,8 @@
     <title>Arte Visual</title>
 
     <link rel="stylesheet" href="css/style.css" />
-    <!-- <link rel="stylesheet" href="css/eventoonline.css" /> -->
-    <link rel="stylesheet" href="contato.css" />
+    <link rel="stylesheet" href="css/eventoonline.css" />
+    <link rel="stylesheet" href="css/contato.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=PT+Sans&=Jost&familydisplay=swap"
       rel="stylesheet"
@@ -45,39 +45,108 @@
         </ul>
       </nav>
     </header>
-
-    <section class="contato">
-      <h3>Faça seu orçamento</h3>
-      <p>
-        Faça um orçamento sem compromisso, será um prazer te atender!
-      </p>
-      <form>
-        <input type="text" placeholder="Empresa" />
-        <input type="text" placeholder="Nome  *" required />
-        <br />
-        <input type="email" placeholder="Email *" required />
-        <input type="number" placeholder="Telefone" />
-
-        <br />
-        <div>
-          <div>
-            <label for="comment">Assunto</label>
-          </div>
-          <textarea
-            id="comment"
-            name="comment"
-            placeholder="Deixe mais detalhes sobre o seu evento..."
-            rows="10"
-            cols="50"
-          ></textarea>
-        </div>
-        <input type="submit" value="Enviar" />
-      </form>
-    </section>
-    <div>
-      <p>Whatsapp</p>
-      <a href="#" class="btn-whatsapp"><i class="fab fa-whatsapp fa-lg"></i></a>
+    <div class="topo">
+      <h2>SOLICITE UM ORÇAMENTO</h2>
     </div>
+    <section class="contato">
+      <form
+        method="POST"
+        id="formContato"
+        action="mailto:contato@artevisualpro.com.br"
+      >
+        <div class="row">
+          <div class="col-25">
+            <label for="company">Empresa</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="company"
+              name="empresa"
+              size="20"
+              maxlength="30"
+              placeholder="Empresa:"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="name">* Nome:</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="name"
+              name="nome"
+              size="20"
+              maxlength="30"
+              placeholder="*Nome: "
+              required
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="email">* Email:</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              size="20"
+              maxlength="30"
+              placeholder="*Email: "
+              required
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="phone">Telefone:</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="tel"
+              id="phone"
+              name="telefone"
+              placeholder="Telefone: "
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="comment">Conte-nos sobre seu evento:</label>
+          </div>
+          <div class="col-75">
+            <textarea
+              id="comment"
+              name="mensagem"
+              placeholder="Mensagem"
+              rows="5"
+              cols="30"
+            >
+            </textarea>
+          </div>
+        </div>
+        <div class="btn-submit">
+          <input type="submit" value="Enviar" />
+        </div>
+      </form>
+      <section class="contato-icons">
+        <div class="btn-icons">
+          <a href="mailto:contato@artevisualpro.com.br" target="blank">
+            <i class="fas fa-envelope"></i> contato@artevisualpro.com.br</a
+          >
+          <a href="#">
+            <i class="fab fa-whatsapp fa"></i> (11) 94765-0522 | Adriano Ignacio
+          </a>
+        </div>
+      </section>
+    </section>
     <footer class="container rodape bg-gradiente">
       <div class="social-icons">
         <a href="#"><i class="fa fa-facebook"></i></a>
