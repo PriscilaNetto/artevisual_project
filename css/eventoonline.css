@@ -9,78 +9,55 @@
   float: left;
   text-align: center;
   padding: 5% 4%;
-  background-color: #e47c27;
+  background: linear-gradient(to left, #e47c27, #ff3a08);
+  font-size: 10px;
 }
-
 .line {
-  border-right: 10px solid rgba(255, 255, 255, 0.75);
-  color: rgba(255, 255, 255, 0.75);
-  font-family: "Jost", monospace;
   font-size: 15px;
-  margin: 20px auto;
-  text-align: left;
-  white-space: nowrap; /*não quebre a linha*/
-  overflow: hidden;
-}
-
-.typing-animation {
-  animation: blinkCursor 500ms steps(30) infinite normal,
-    typing 7s steps(50) 1s normal both;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 40em;
-  }
-}
-
-@keyframes blinkCursor {
-  from {
-    border-right-color: rgba(255, 255, 255, 0.75);
-  }
-  to {
-    border-right-color: transparent;
-  }
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 10px;
+  text-align: center;
+  word-spacing: 10px;
+  line-height: 1.5em;
 }
 
 /*servicos*/
 
 .servicos {
-  width: 100%;
-  float: left;
-  padding: 8% 4%;
-}
-.descricao {
-  width: 100%;
-  background-color: #e47c27;
-  text-align: left;
-  margin-bottom: 3%;
-  border-radius: 7px 7px 0 0;
-  /* border: solid 2px #da6709; */
+  min-height: 100vh;
+  padding: 2em;
+  background-image: url("../img/color_IMG-20200812-WA0000.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.descricao img {
-  border-radius: 7px 7px 0 0;
-  border: solid 3px #ffffff;
-  width: 100%;
+.online {
+  margin-top: 170px;
 }
 
-.inner {
-  padding: 6%;
+h2 {
+  padding-top: 10px;
+  padding-left: 10px;
+  font-family: "Jost", sans-serif;
+  color: #f5f5f5;
+  margin-bottom: 1.5em;
+  border-top: 3px solid #f5f5f5;
 }
 
-.inner h2 {
-  font-size: 1.2em;
-  color: #0e0d0d;
-  margin-top: 2%;
+.servicos p {
+  color: white;
+  margin-bottom: 1em;
+  text-indent: 1.5em;
+  text-align: justify;
 }
-.inner p {
-  margin-top: 5%;
-  color: #0e0d0d;
-  line-height: 1.5em;
+
+li {
+  color: white;
+}
+
+.bg-gradiente {
+  background: #000000;
 }
 
 /*tablets*/
@@ -88,7 +65,7 @@
 @media (min-width: 768px) {
   .banner {
     text-align: left;
-    padding: 3% 4%;
+    padding: 2% 4%;
     background-color: #e47c27;
   }
 
@@ -96,8 +73,8 @@
     border-right: 10px solid rgba(255, 255, 255, 0.75);
     color: rgba(255, 255, 255, 0.75);
     font-family: "Jost", monospace;
-    font-size: 22px;
-    margin: 20px 0px 15px 0px;
+    font-size: 20px;
+    margin: 20px 0px;
     text-align: left;
     white-space: nowrap; /*não quebre a linha*/
     overflow: hidden;
@@ -108,22 +85,27 @@
       typing 7s steps(50) 1s normal both;
   }
 
-  .descricao {
-    width: 49%;
-    float: left;
-    margin-right: 2%;
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 43em;
+    }
   }
 
-  .descricao:nth-child(2) {
-    margin-right: 0;
-  }
-  .descricao li {
-    margin-bottom: 3px;
+  @keyframes blinkCursor {
+    from {
+      border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+      border-right-color: transparent;
+    }
   }
 }
 
 /*tablets e desktops*/
-@media (min-width: 960px) {
+/* @media (min-width: 960px) {
   .descricao {
     width: 48%;
   }
@@ -134,30 +116,24 @@
 
   /* .descricao:nth-child(3) {
     margin-right: 0;
-  } */
-}
+  } 
+} */
 
 /* Desktop*/
 
 @media (min-width: 1200px) {
+  .cabecalho {
+    padding: 10px 12%;
+  }
+
+  .logo {
+    width: 145px;
+    height: 65px;
+  }
   .menu li a {
-    color: #ffffff;
+    /* color: #ffffff; */
     font-size: 1em;
-    padding: 35px;
-    margin: 30px;
-  }
-
-  .servicos {
-    width: 100%;
-    float: left;
-    padding: 6% 2%;
-  }
-
-  .inner h2 {
-    font-size: 2em;
-  }
-  .descricao li,
-  .inner p {
-    font-size: 1.5em;
+    padding: 10px;
+    margin: 12px;
   }
 }
