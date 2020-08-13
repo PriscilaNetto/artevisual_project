@@ -373,4 +373,7 @@ video {
   footer p {
     font-size: 16px;
   }
+  .copyright {
+    margin-top: 10px;
+  }
 }

@@ -12,6 +12,7 @@
   background: linear-gradient(to left, #e47c27, #ff3a08);
   font-size: 10px;
 }
+
 .line {
   font-size: 15px;
   color: rgba(255, 255, 255, 0.75);
@@ -32,17 +33,20 @@
   background-attachment: fixed;
 }
 
-.online {
-  margin-top: 170px;
+.online h2 {
+  margin-top: 200px;
+}
+
+.infra h2 {
+  margin-top: 30px;
 }
 
 h2 {
-  padding-top: 10px;
-  padding-left: 10px;
+  padding-top: 10px 0px 0px 10px;
   font-family: "Jost", sans-serif;
-  color: #f5f5f5;
+  color: rgba(255, 255, 255, 0.726);
   margin-bottom: 1.5em;
-  border-top: 3px solid #f5f5f5;
+  border-bottom: 3px solid #f5f5f5;
 }
 
 .servicos p {
@@ -54,10 +58,19 @@ h2 {
 
 li {
   color: white;
+  margin-left: 10px;
 }
 
 .bg-gradiente {
   background: #000000;
+}
+
+.social-icons a:hover {
+  color: rgba(224, 69, 7, 0.9);
+}
+
+.rodape {
+  border-top: 2px solid #da6709;
 }
 
 /*tablets*/
@@ -66,14 +79,17 @@ li {
   .banner {
     text-align: left;
     padding: 2% 4%;
-    background-color: #e47c27;
+  }
+
+  .servicos {
+    min-height: 100vh;
+    padding: 3em;
   }
 
   .line {
     border-right: 10px solid rgba(255, 255, 255, 0.75);
-    color: rgba(255, 255, 255, 0.75);
     font-family: "Jost", monospace;
-    font-size: 20px;
+    font-size: 15px;
     margin: 20px 0px;
     text-align: left;
     white-space: nowrap; /*não quebre a linha*/
@@ -90,7 +106,7 @@ li {
       width: 0;
     }
     to {
-      width: 43em;
+      width: 46em;
     }
   }
 
@@ -102,22 +118,39 @@ li {
       border-right-color: transparent;
     }
   }
+
+  h2 {
+    margin-bottom: 2.5em;
+  }
+
+  .online h2 {
+    margin-top: 180px;
+  }
+
+  .servicos {
+    padding: 3.5em;
+  }
+
+  li,
+  .servicos p {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  .servicos p {
+    margin-bottom: 2em;
+  }
 }
 
 /*tablets e desktops*/
-/* @media (min-width: 960px) {
-  .descricao {
-    width: 48%;
+@media (min-width: 960px) {
+  .line {
+    font-size: 18px;
   }
-
-  .descricao:nth-child(2) {
-    margin-right: 2%;
+  li {
+    margin-left: 15px;
   }
-
-  /* .descricao:nth-child(3) {
-    margin-right: 0;
-  } 
-} */
+}
 
 /* Desktop*/
 
@@ -131,9 +164,17 @@ li {
     height: 65px;
   }
   .menu li a {
-    /* color: #ffffff; */
     font-size: 1em;
     padding: 10px;
     margin: 12px;
+  }
+  .servicos {
+    padding: 4em;
+  }
+  .online h2 {
+    margin-top: 195px;
+  }
+  .infra h2 {
+    margin-top: 50px;
   }
 }
