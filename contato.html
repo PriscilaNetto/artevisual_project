@@ -6,10 +6,10 @@
     <title>Arte Visual</title>
 
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/eventoonline.css" />
+
     <link rel="stylesheet" href="css/contato.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=PT+Sans&=Jost&familydisplay=swap"
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&=Jost&family=Barlow:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="img/favicon.ico" />
@@ -45,103 +45,53 @@
         </ul>
       </nav>
     </header>
-    <div class="topo">
-      <h2>SOLICITE UM ORÇAMENTO</h2>
-    </div>
-    <section class="contato">
-      <form
-        method="POST"
-        id="formContato"
-        action="mailto:contato@artevisualpro.com.br"
-      >
-        <div class="row">
-          <div class="col-25">
-            <label for="company">Empresa</label>
-          </div>
-          <div class="col-75">
-            <input
-              type="text"
-              id="company"
-              name="empresa"
-              size="20"
-              maxlength="30"
-              placeholder="Empresa:"
-            />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="name">* Nome:</label>
-          </div>
-          <div class="col-75">
-            <input
-              type="text"
-              id="name"
-              name="nome"
-              size="20"
-              maxlength="30"
-              placeholder="*Nome: "
-              required
-            />
-          </div>
-        </div>
 
-        <div class="row">
-          <div class="col-25">
-            <label for="email">* Email:</label>
-          </div>
-          <div class="col-75">
-            <input
-              type="email"
-              id="email"
-              name="email"
-              size="20"
-              maxlength="30"
-              placeholder="*Email: "
-              required
-            />
-          </div>
-        </div>
+    <section class="form-section">
+      <h2>SOLICITE SEU ORÇAMENTO</h2>
 
-        <div class="row">
-          <div class="col-25">
-            <label for="phone">Telefone:</label>
-          </div>
-          <div class="col-75">
-            <input
-              type="tel"
-              id="phone"
-              name="telefone"
-              placeholder="Telefone: "
-            />
-          </div>
-        </div>
+      <div class="form-wrapper">
+      <form  action= "">  
+        <div class="input-block">
+          <label for="Nome">Nome</label>
+        <input type="text"  id="nome" placeholder="Nome" required>
+      </div>
+      <div class="input-block">
+        <label for="email">Email</label>
+        <input  type="email" id="email" placeholder="Email" required>
+      </div>
+      <div class="input-block">
+        <label for="empresa">Empresa</label>
+        <input type="text" name="empresa" placeholder="Empresa">
+      </div>
+      <div class="input-block">
+        <label for="message">Mensagem</label>
+        <textarea id="message" placeholder="Conte-nos sobre seu evento"></textarea>
+      </div>
+        <button type="submit" class="btn-enviar">Enviar</button>
 
-        <div class="row">
-          <div class="col-25">
-            <label for="comment">Conte-nos sobre seu evento:</label>
-          </div>
-          <div class="col-75">
-            <textarea id="comment" name="mensagem" placeholder="Mensagem">
-            </textarea>
-          </div>
-        </div>
-        <div class="btn-submit">
-          <input type="submit" value="Enviar" />
-        </div>
       </form>
-      <div class="line"></div>
+      </div>
+    </section>
+
+    <script src="./scripts.js"></script>
+
+
+
       <section class="contato-icons">
         <div class="btn-icons">
           <a href="mailto:contato@artevisualpro.com.br" target="blank">
             <i class="fas fa-envelope"></i> contato@artevisualpro.com.br</a
           >
+        </div>
+        <div class="btn-icons">
           <a href="#">
             <i class="fab fa-whatsapp fa"></i> (11) 94765-0522 | Adriano Ignacio
           </a>
         </div>
+        
       </section>
     </section>
+
     <footer class="container rodape bg-gradiente">
       <div class="social-icons">
         <a href="#"><i class="fa fa-facebook"></i></a>
