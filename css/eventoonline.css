@@ -83,7 +83,7 @@ li {
 
   .servicos {
     min-height: 100vh;
-    padding: 3em;
+    padding: 4.5em;
   }
 
   .line {
@@ -119,19 +119,20 @@ li {
     }
   }
 
+  .servicos {
+    padding: 3.5em;
+  }
+
   h2 {
     margin-bottom: 2.5em;
+    font-size: 2em;
   }
 
   .online h2 {
     margin-top: 180px;
   }
 
-  .servicos {
-    padding: 3.5em;
-  }
-
-  li,
+  .infra li,
   .servicos p {
     font-size: 18px;
     margin-left: 10px;
@@ -139,6 +140,8 @@ li {
 
   .servicos p {
     margin-bottom: 2em;
+    padding-right: 50px;
+    line-height: 1.5em;
   }
 }
 
@@ -147,8 +150,12 @@ li {
   .line {
     font-size: 18px;
   }
-  li {
+
+  .infra li {
     margin-left: 15px;
+  }
+  .servicos p {
+    margin-bottom: 2.5em;
   }
 }
 
@@ -156,21 +163,27 @@ li {
 
 @media (min-width: 1200px) {
   .cabecalho {
-    padding: 10px 12%;
+    padding: 10px 10%;
   }
 
+  .menu {
+    width: 45%;
+  }
+  .menu li {
+    padding: 0 55px;
+  }
   .logo {
     width: 145px;
     height: 65px;
   }
-  .menu li a {
-    font-size: 1em;
-    padding: 10px;
-    margin: 12px;
-  }
   .servicos {
-    padding: 4em;
+    padding: 4.5em;
+    padding-left: 70px;
   }
+  .infra li {
+    margin-left: 40px;
+  }
+
   .online h2 {
     margin-top: 195px;
   }
