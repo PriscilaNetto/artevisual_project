@@ -22,7 +22,7 @@ body {
 
 .logo {
   float: left;
-  width: 150px;
+  width: 145px;
   height: 55px;
   background: url(../img/logoArtetransp.png) center center/160px no-repeat;
 }
@@ -62,6 +62,7 @@ body {
 
 .menu li {
   padding: 1.5%;
+  list-style: none;
 }
 
 .menu li a {
@@ -116,10 +117,12 @@ video {
 }
 
 .marcas h2 {
-  background: -webkit-radial-gradient(#da6709, orangered);
+  background-color: rgb(43, 40, 40);
+  color: #ffffff;
   padding: 10px 100px;
   font-family: "Jost", sans-serif;
   text-align: center;
+  line-height: 2em;
   text-transform: uppercase;
 }
 .marcas .grid {
@@ -145,11 +148,27 @@ video {
 .social-icons a:last-child {
   margin-right: 0;
 }
+.contato-icons a:hover,
 .social-icons a:hover {
   color: rgba(10, 10, 10, 0.9);
 }
+
+.contato-icons {
+  margin: 2%;
+  font-size: 12px;
+}
+
+.contato-icons a {
+  color: rgba(255, 255, 255, 0.7);
+  padding-right: 8px;
+}
+
+.contato-icons a:hover {
+  text-decoration-line: underline;
+}
+
 .copyright {
-  margin-top: 2%;
+  margin-top: 3%;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -204,7 +223,7 @@ video {
   }
 
   .marcas h2 {
-    padding: 2px 10px;
+    padding: 2px;
     font-size: 13px;
   }
   .grid {
@@ -218,11 +237,11 @@ video {
     height: 50px;
   }
 
-  footer p {
-    font-size: 10px;
-  }
   .social-icons a {
     margin-right: 8%;
+  }
+  footer p {
+    font-size: 10px;
   }
 }
 
@@ -231,10 +250,14 @@ video {
 @media (min-width: 768px) {
   .flex-video {
     margin: 0 20px 60px;
-    padding: 250px 20px 10px 50px;
+    padding: 190px 20px 10px 20px;
   }
   .sobre {
     padding: 15em 2em;
+  }
+
+  .sobre p {
+    font-size: 18px;
   }
 
   .marcas h2 {
@@ -252,11 +275,18 @@ video {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 100px 100px;
   }
+
+  .contato-icons {
+    letter-spacing: 1px;
+  }
+
+  .contato-icons a {
+    padding: 0 20px;
+  }
+
+  .contato-icons a,
   footer p {
     font-size: 15px;
-  }
-  .social-icons a {
-    margin-right: 8%;
   }
 }
 
@@ -294,13 +324,16 @@ video {
 /* Desktops*/
 
 @media (min-width: 1200px) {
+  .container {
+    padding: 2% 4%;
+  }
   .flex-video {
     margin: 0 20px 90px;
-    padding: 126px 115px 50px;
+    padding: 130px 100px 50px;
   }
 
   .cabecalho {
-    padding: 10px 9%;
+    padding: 10px 12%;
   }
 
   .logo {
@@ -313,7 +346,7 @@ video {
   }
 
   .menu {
-    width: 54%;
+    width: 50%;
     height: 60px;
     line-height: 60px;
     float: right;
@@ -327,12 +360,12 @@ video {
   .menu li {
     float: left;
     list-style: none;
-    padding: 0 50px;
+    padding: 0 40px 0 45px;
   }
   .menu li a {
     color: #ffffff;
     font-size: 1em;
-    padding: 8px;
+    padding: 5px;
   }
 
   .menu li a:hover {
@@ -370,8 +403,8 @@ video {
     margin-right: 4%;
   }
 
-  footer p {
-    font-size: 16px;
+  .contato-icons a {
+    font-size: 18px;
   }
   .copyright {
     margin-top: 10px;
