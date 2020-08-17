@@ -5,17 +5,17 @@
 }
 
 section {
-  padding: 25px;
+  padding: 15px;
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 1px;
   text-align: center;
-  margin: 75px 0px;
+  margin: 75px 0px 40px 0;
   padding-top: 5px;
-  line-height: 2em;
-  color: #ee703f;
+  line-height: 1em;
+  color: #ff3a08;
 }
 
 form {
@@ -59,19 +59,22 @@ form .btn-enviar {
   cursor: pointer;
 }
 
-.contato-icons {
-  font-family: "Jost", sans-serif;
-  padding: 5px;
-  border-top: 2px solid #ccddef;
+/* Aparição do FORM*/
+
+form {
+  animation: fade 1s;
 }
 
-.btn-icons {
-  text-align: center;
-  padding: 15px;
-}
-.contato-icons a {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 18px;
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 @media (min-width: 768px) {
@@ -100,22 +103,22 @@ form .btn-enviar {
   }
 
   .menu {
-    width: 45%;
+    width: 43%;
   }
   .menu li {
-    padding: 0 55px;
+    padding: 0 60px;
   }
 
   section {
-    padding: 115px;
+    padding: 100px;
   }
   form {
-    padding: 50px 25px;
-    margin: 0 70px 0 70px;
+    padding: 50px 65px;
+    margin: 0 85px 0 85px;
   }
 
   h2 {
-    margin: 35px 0px;
+    margin: 20px 0px;
   }
 
   form .input-block label {
@@ -124,10 +127,5 @@ form .btn-enviar {
   form .btn-enviar {
     min-width: 150px;
     font-size: 16px;
-  }
-
-  .contato-icons a {
-    font-size: 20px;
-    letter-spacing: 1px;
   }
 }

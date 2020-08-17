@@ -18,8 +18,6 @@
       ;
       crossorigin="anonymous"
       ;
-      src="scripts.js"
-      ;
     ></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.js"
@@ -29,6 +27,9 @@
       crossorigin="anonymous"
       ;
     ></script>
+    <script>
+      src = "script.js";
+    </script>
   </head>
 
   <body>
@@ -50,48 +51,32 @@
       <h2>SOLICITE SEU ORÇAMENTO</h2>
 
       <div class="form-wrapper">
-      <form  action= "">  
-        <div class="input-block">
-          <label for="Nome">Nome</label>
-        <input type="text"  id="nome" placeholder="Nome" required>
-      </div>
-      <div class="input-block">
-        <label for="email">Email</label>
-        <input  type="email" id="email" placeholder="Email" required>
-      </div>
-      <div class="input-block">
-        <label for="empresa">Empresa</label>
-        <input type="text" name="empresa" placeholder="Empresa">
-      </div>
-      <div class="input-block">
-        <label for="message">Mensagem</label>
-        <textarea id="message" placeholder="Conte-nos sobre seu evento"></textarea>
-      </div>
-        <button type="submit" class="btn-enviar">Enviar</button>
-
-      </form>
+        <form>
+          <div class="input-block">
+            <label for="Nome">* Nome:</label>
+            <input type="text" id="nome" placeholder="Nome" required />
+          </div>
+          <div class="input-block">
+            <label for="email">* Email:</label>
+            <input type="email" id="email" placeholder="Email" required />
+          </div>
+          <div class="input-block">
+            <label for="empresa">Empresa:</label>
+            <input type="text" name="empresa" placeholder="Empresa" />
+          </div>
+          <div class="input-block">
+            <label for="message">Mensagem:</label>
+            <textarea
+              id="message"
+              placeholder="Conte-nos sobre seu evento"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn-enviar">
+            Enviar
+          </button>
+        </form>
       </div>
     </section>
-
-    <script src="./scripts.js"></script>
-
-
-
-      <section class="contato-icons">
-        <div class="btn-icons">
-          <a href="mailto:contato@artevisualpro.com.br" target="blank">
-            <i class="fas fa-envelope"></i> contato@artevisualpro.com.br</a
-          >
-        </div>
-        <div class="btn-icons">
-          <a href="#">
-            <i class="fab fa-whatsapp fa"></i> (11) 94765-0522 | Adriano Ignacio
-          </a>
-        </div>
-        
-      </section>
-    </section>
-
     <footer class="container rodape bg-gradiente">
       <div class="social-icons">
         <a href="#"><i class="fa fa-facebook"></i></a>
@@ -105,11 +90,24 @@
           ><i class="fab fa-linkedin fa-lg"></i
         ></a>
       </div>
+      <div class="contato-icons">
+        <a href="mailto:contato@artevisualpro.com.br" target="blank">
+          <i class="fas fa-envelope"></i> contato@artevisualpro.com.br</a
+        >
+        <a
+          href="http://api.whatsapp.com/send?phone=5511947650522"
+          target="blank"
+        >
+          <i class="fab fa-whatsapp fa"></i> (11) 94765-0522
+        </a>
+      </div>
       <p class="copyright">
         Todos os direitos reservados &copy; 2020 | Desenvolvido por Priscila
         Netto
       </p>
     </footer>
+
+    <script src="scripts.js"></script>
     <!-- Jquery-->
     <script>
       $(document).ready(function () {
