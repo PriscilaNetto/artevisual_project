@@ -28,6 +28,7 @@
   min-height: 100vh;
   padding: 2em;
   background-image: url("../img/color_IMG-20200812-WA0000.jpg");
+  background-position: 24%;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -38,7 +39,7 @@
 }
 
 .infra h2 {
-  margin-top: 70px;
+  margin-top: 4em;
 }
 
 h2 {
@@ -189,8 +190,5 @@ li {
 
   .online h2 {
     margin-top: 195px;
-  }
-  .infra h2 {
-    margin-top: 50px;
   }
 }
