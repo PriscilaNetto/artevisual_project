@@ -51,7 +51,7 @@ body {
   color: #ffffff;
   float: right;
   cursor: pointer;
-  margin: 2% 3% 0 0;
+  margin: 2% 10% 0 0;
 }
 
 .menu ul {
@@ -61,7 +61,7 @@ body {
 }
 
 .menu li {
-  padding: 1.5%;
+  padding: 1%;
   list-style: none;
 }
 
@@ -96,7 +96,6 @@ video {
 
 .sobre h2 {
   padding-top: 30px;
-  font-family: "Jost", sans-serif;
   color: whitesmoke;
   margin-bottom: 1.5em;
   font-size: 2em;
@@ -120,7 +119,6 @@ video {
   background-color: rgb(43, 40, 40);
   color: #ffffff;
   padding: 10px 100px;
-  font-family: "Jost", sans-serif;
   text-align: center;
   line-height: 2em;
   text-transform: uppercase;
@@ -154,17 +152,14 @@ video {
 }
 
 .contato-icons {
-  margin: 2%;
-  font-size: 12px;
+  margin-top: 10px;
 }
 
 .contato-icons a {
   color: rgba(255, 255, 255, 0.7);
-  padding-right: 8px;
-}
-
-.contato-icons a:hover {
-  text-decoration-line: underline;
+  padding-right: 7px;
+  font-size: 14px;
+  text-decoration: underline;
 }
 
 .copyright {
@@ -177,14 +172,10 @@ video {
 /* small devices - smartphones*/
 
 @media (min-width: 360px) {
-  body {
-    font-size: 14px;
-  }
-
   .container {
     width: 100%;
     float: left;
-    padding: 3% 4%;
+    padding: 3% 2%;
     text-align: center;
   }
   .logo {
@@ -198,17 +189,13 @@ video {
     margin-top: 20px;
   }
 
-  .btn-close {
-    margin: 2% 10% 0 0;
-  }
-
   .flex-video {
     margin: 0 10px;
     padding: 160px 10px 30px;
   }
 
   .sobre {
-    background-position: 70%;
+    background-position: 45%;
     padding: 12em 2em;
   }
 
@@ -240,6 +227,7 @@ video {
   .social-icons a {
     margin-right: 8%;
   }
+
   footer p {
     font-size: 10px;
   }
@@ -248,6 +236,10 @@ video {
 /*tablets*/
 
 @media (min-width: 768px) {
+  .menu li {
+    padding: 0.5%;
+  }
+
   .flex-video {
     margin: 0 20px 60px;
     padding: 190px 20px 10px 20px;
@@ -277,16 +269,22 @@ video {
   }
 
   .contato-icons {
+    margin-top: 20px;
     letter-spacing: 1px;
   }
 
   .contato-icons a {
     padding: 0 20px;
+    font-size: 18px;
+    text-decoration: none;
   }
 
-  .contato-icons a,
+  .contato-icons a:hover {
+    text-decoration-line: underline;
+  }
+
   footer p {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
