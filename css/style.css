@@ -159,12 +159,13 @@ video {
   color: rgba(255, 255, 255, 0.7);
   padding-right: 7px;
   font-size: 14px;
-  text-decoration: underline;
 }
 
 .copyright {
   margin-top: 3%;
+  padding-top: 15px;
   color: rgba(255, 255, 255, 0.7);
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 /* mobile first*/
