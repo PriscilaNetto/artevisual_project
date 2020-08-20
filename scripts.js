@@ -1,14 +1,10 @@
 
-// function mensagemEnvio() {
-//   window.location.href = "mensagem.html"
-// }
-
 const fields = document.querySelectorAll("[required]");
 
 function validateField(field) {
 
   function verifyErrors() {
-    let foundError = false;
+    let foundError = false
 
     for (let error in field.validity) {
 
@@ -26,14 +22,14 @@ function validateField(field) {
   function customMessage(typeError) {
     const messages = {
       text: {
-        valueMissing: "Por favor, preencha este campo"
+        valueMissing: "Por favor, preencha este campo."
       },
       email: {
-        valueMissing: "Email é obrigatório",
-        typeMismatch: "Por favor, preencha um email válido"
+        valueMissing: "Email é obrigatório.",
+        typeMismatch: "Por favor, preencha um email válido."
       },
       textarea: {
-        valueMissing: "Por favor, preencha este campo"
+        valueMissing: "Por favor, preencha este campo."
       }
 
     }
@@ -88,8 +84,12 @@ for (field of fields) {
   field.addEventListener("blur", customValidation)
 }
 
+function mensagemEnvio() {
+  window.location.href = "mensagem.html"
+}
+
 
 document.querySelector("form").addEventListener("submit", event => {
-  console.log("Pode enviar o formulário");
   event.preventDefault()
+  mensagemEnvio();
 })
