@@ -61,7 +61,6 @@ body {
 }
 
 .menu li {
-  padding: 1%;
   list-style: none;
 }
 
@@ -72,7 +71,7 @@ body {
 }
 
 .menu li a:hover {
-  border: 2px solid #ec5b06;
+  color: #ec5b06;
 }
 
 a {
