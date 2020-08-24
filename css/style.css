@@ -11,7 +11,7 @@ body {
 }
 
 .bg-gradiente {
-  background: linear-gradient(to right, #e47c27, #ff3a08);
+  background: linear-gradient(to right, #e47c27, #ec522b);
 }
 
 .cabecalho {
@@ -87,7 +87,7 @@ video {
 
 .sobre {
   padding-left: 7em;
-  background-image: url(../img/IMG_67812.png);
+  background-image: url(../img/IMG_6781.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
