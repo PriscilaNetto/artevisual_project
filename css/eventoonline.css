@@ -9,7 +9,7 @@
   float: left;
   text-align: center;
   padding: 5% 4%;
-  background: linear-gradient(to left, #e47c27, #ff3a08);
+  background: linear-gradient(to left, #e47c27, #ec522b);
   font-size: 10px;
 }
 
@@ -28,7 +28,7 @@
   min-height: 100vh;
   padding: 2em;
   background-image: url("../img/color_IMG-20200812-WA0000.jpg");
-  background-position: 24%;
+  background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -88,6 +88,7 @@ h2 {
   .servicos {
     min-height: 100vh;
     padding: 4.5em;
+    background-position: 24%;
   }
 
   .line {
