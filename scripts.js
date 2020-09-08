@@ -92,4 +92,6 @@ function mensagemEnvio() {
 document.querySelector("form").addEventListener("submit", event => {
   event.preventDefault()
   mensagemEnvio();
+
+  console.log(event)
 })
